@@ -1,0 +1,104 @@
+<!--Recriando a Interface do NETFLIX-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+
+    <!--responsividade-->
+
+    <link rel="stylesheet" href="style/responsive.css">
+
+    <!--owl css-->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+    <title>NETFLIX CLONE</title>
+</head>
+
+<body>
+    <header>
+        <!-- header = Um grupo de suporte introdutório, como seções de cabeçalho-->
+        <!--wrapper = envelopar (no meu HTML está como container) /
+        uma classe que guarda vários outros elementos dentro e fica mais fácil de manipular
+        os elementos filhos-->
+        <div class="container">
+            <!--div = Elemento de divisão do HTML um container genérico-->
+            <h2 class='logo'>NETFLIX</h2>
+            <nav>
+                <!--nav = uma seção de uma página que aponta para outras páginas ou para outra área da página-->
+                <a href="#">Início</a>
+                <a href="#">Séries</a>
+                <a href="#">Filmes</a>
+                <a href="#">Documentários</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!--main = conteúdo principal aquele relacionado diretamente com o tópico central-->
+        <div class="filme-principal">
+            <div class="container">
+                <h3 class="titulo">HOUSE OF CARDS</h3>
+                <p class="descricao">Nada pode impedir o político sem escrúpulos Frank Underwood de conquistar
+                    Washington. Assista agora a nova temporada de house of Cards que está imperdível.</p>
+
+                <div class="botoes">
+                    <button role="button" class="botao">
+                        <i class="fas fa-play"></i>
+                        ASSISTIR AGORA
+                    </button>
+                    <button role="button" class="botao">
+                        <i class="fas fa-info-circle"></i>
+                        <!--padrão do site fontawesome para pegar os ícones-->
+                        MAIS INFORMAÇÕES
+                    </button>
+                    <!--utilizamos o fontawesome para pegar os cones dos botões -->
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="carrosel-filmes">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class="box-filme" src="img/mini1.jpg" alt="Imagem filme1">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini2.jpg" alt="Imagem filme1">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini3.jpg" alt="Imagem filme1">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini4.jpg" alt="Imagem filme1">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini5.jpg" alt="Imagem filme1">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini6.jpg" alt="Imagem filme1">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini7.jpg" alt="Imagem filme1">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini8.jpg" alt="Imagem filme1">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini9.jpg" alt="Imagem filme1">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini10.jpg" alt="Imagem filme1">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/24851f4b60.js" crossorigin="anonymous"></script>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+/*utilização de variaveis dentro do css3,
+para declarar podemos definir dentro do elemento root*/
+
+:root{
+    --vermelho:#E50914;
+    --preta:#141414;
+}
+
+/*usamos o * para fazer o reset da página*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box; /*o limite de tudo o que está dentro será a borda da caixa*/
+}
+/*elemento base*/
+body{
+    background: var(--preta);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+/*flex box - alinhar o elemento na tela. O flex box tem a tendencia de jogar tudo para linha*/
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;/*alinha de uma maneira vertical*/
+    justify-content: space-between;/*alinha de uma maneira horizontal*/
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration:none;
+    color:#AAA;
+    margin-right: 10px;
+}
+
+/*Colocar a cor diferente quando passo o mouse*/
+/*Toda vez que o mouse estiver em cima, vou pintar ele dessa cor*/
+header nav a:hover{
+    color:#fff;
+}
+
+/*Filme Principal*/
+.filme-principal{
+    font-size:16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50) 100%), url('/img/capa-house.jpg'); /*linear gradiente para criar um gradiente de cor escura e deixou uma opacidade com o ".50"*/
+
+    height:400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column; /*alinhamento em coluna de maneira vertical*/
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.filme-principal .titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color:white;
+
+    padding: 15px 30px; /*4 valores = cima direita baixo esquerda
+    2 valores = baixo cima, esquerda e direita
+    1 valor = todos os cantos */
+
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .4s ease all; /*tansição entre uma animação ou outra, no caso a animação do botão.*/
+}
+
+.botao:hover{ /*animação do botão*/
+    background-color: white;
+    color:black;
+} 
+
+.botao i{
+    margin-right: 8px; /*margem entre o icone e o que está escrito*/
+}
+
+
+.container{
+    margin-left: 20px;
+}
+
+.filme-principal .container{
+width: 70%;/*Quando a tela ficar minimizada ele tem uma definição de largura de no máximo 60%*/      
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes{
+    margin-top: 5px;
+}
